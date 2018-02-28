@@ -1,0 +1,462 @@
+
+/* GENERAL FORMATTING */
+
+html {
+	font-family: Verdana;
+	font-size: 62.5%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	font-size: 14px;
+	margin: 0;
+	font-family: Verdana;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #001636
+}
+
+ footer,
+nav {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Verdana;
+}
+
+h1 {
+	color: #d5c063;
+	font-size: 30pt;
+	font-weight: 900px;
+	text-shadow: 2px 2px 3px rgba(0,0,0, 0.5);
+	text-align: center;
+}
+
+h1:after {  /*Underline*/
+	display: block;
+	content: "";
+	height: 2px;
+	width: 300px;
+	margin: 5px auto 40px;
+	box-shadow: 5x 2px 3px rgba(0,0,0,0.5);
+	background: #d5c063;
+}
+
+h2 {
+	line-height: 50px;
+	color: #d5c063;
+}
+
+h3 {
+	line-height: 30px;
+	padding-bottom: 20px;
+}
+
+h4 {  /* unused*/
+	padding-top: 25px;
+	line-height: 40px;
+	padding-bottom: 0px;
+	font-size: 22pt;
+	font-weight:900
+}
+
+p {
+	font-weight: 300;
+	line-height: 30px;
+	padding-bottom: 15px;
+	font-family: Verdana;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.heading-padding {
+	padding-bottom: 40px;
+}
+
+section {
+	padding-top: 50px;
+	margin-top: 50px;
+}
+
+.navbar {
+	height: 105px;
+	max-height: 340px;
+	display: block;
+}
+
+.head-container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #001636;
+}
+
+.container-fluid {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.clearfix:after,
+.container:after,
+.navbar:after {
+	clear: both;
+	display: table;
+	content: " ";
+}
+
+/* Navigation Section Formatting */
+
+.wrap {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+
+.menu-container {
+	max-height: 340px;
+	margin: 0% auto;
+	/* 0% refers to top and bottom, auto refers to the edges. Centers */
+	content: "";
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	/*z-index caused the static menu bar/buttons */
+}
+	
+.menu {
+	color: #f00;
+	font: bold 12px/18px sans-serif;
+	text-align: center;
+	display: inline;
+	margin: 0% auto;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+.menu li {
+	color: #000;
+	background-color: rgba(255, 255, 255, 1);
+	display: inline-block;
+	margin: 0% auto;
+	position: relative;
+	padding: 15px 4%;
+	border: 1px solid #001F4B;
+	box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+	border-radius: 6px;
+	cursor: pointer;
+	transition-property: background;
+	transition-duration: .4s;
+	transition-delay: 0s;
+	transition-timing-function: ease-in-out;
+}	
+
+/* Home Section Formatting */
+
+#home {
+	background: url(../IMAGES/planets.jpg) no-repeat 35% 35%;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	display: block;
+	height: auto;
+	padding-top: 350px;
+	padding-bottom: 500px;
+	color: fff;
+}
+
+.head-main {
+	font-size: 54pt;
+	text-align: center;
+	font-variant: small-caps;
+	text-shadow: 2px 4px 5px rgba(0,0,0,0.9);
+	color: #d5c063;  /* The Space Station Text */
+	font-family: Verdana;
+	line-height: 2;
+	font-weight: 1000; 
+	padding: 10px ;
+}
+
+.head-main:after {  /*Underline*/
+	display: block;
+	content: "";
+	height: 5px;
+	width: 1000px;
+	margin: 5px auto 40px;
+	box-shadow: 5x 2px 3px rgba(0,0,0,0.5);
+	background: #d5c063;
+}
+
+.head-sub-main { /* unused?*/
+	font-size: 23 pt;
+	font-weight: 500;
+	padding: 50px 20px 10px 20px;
+	text-transform: uppercase;
+}
+
+.head-last {     /* unused? */
+	font-size: 18 pt;
+	font-weight: 900;
+	padding: 5px 20px 20px 20px;
+	border: 1px dotted line #fff;
+	padding: 5px;
+}
+
+/* Gallery Section */
+
+.flex-container {
+	display: -webkit-flex;
+    display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	border-radius: 8px;
+	margin: 0px auto;
+	background-color: white;
+	box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+.photo {
+	position: relative;
+	line-height: 0;
+	margin-bottom: 24pt;
+	overflow: hidden;
+	border-radius: 8px;
+	padding: 1px;
+	border: 1px solid #021a40;
+	background-color: #001F4B; /*container yellow color */
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.photo-container {
+	text-align: center;
+	margin: 15px auto;
+	width: 300px;
+	height: 169px;
+}
+
+.photo-container img{
+	max-width: 100%;
+	width: 300px;
+	height: 169px;
+}
+
+.photo-overlay {
+	color: #fff; 
+	position: absolute;
+	top: 0;
+	right: 0; 
+	bottom: 0;
+	left: 0; 
+	padding-left: 20px;
+	padding-right: 20px;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0,.5);
+}
+
+.white-head {
+	color: #c9bdaa;
+	margin-top: 5%;
+}
+
+/* Contact Section Formatting */
+
+#contact {
+	background-color: #001636;
+}
+
+.reservation {
+	width: 60%;
+	padding: 10px;
+	border-radius: 8px;
+	margin: 0px auto;
+	background-color: #fff;
+	box-shadow: -1px -1px 1px 0 rgba(0,0,0,0/1), 1px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+.reservation h2 {
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	color: #000;
+	font-weight: 500;
+	font-size: 16pt;
+	letter-spacing: 0pt; 
+	word-spacing: 0pt;
+}
+
+.reservation h2 span {
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	color: #13161b;
+	font-weight: 900;
+	font-size: 18pt;
+	letter-spacing: .4pt; 
+	word-spacing: .3pt;
+	font-variant: small-caps;
+}
+
+.reservation p {
+	color: #13161b;
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.reservation form {
+	font-size: 15pt;
+	outline: none;
+	font-weight: 600;
+	color: #8d8e8f;
+	padding: 12px 12px;
+	width: 70%;
+	border: 1px solid #808080;
+	margin: 2% auto;
+	border-radius: 7px;
+	background: rgb(227,222,222);
+	box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+	font-family: Verdana;
+}
+
+.reservation input[type="text"] {
+	font-size: 10pt;
+	outline: none;
+	font-weight: 400;
+	color: #000;  /* new color */
+	padding: 2% 1% 2% 7%;
+	width: 80%;
+	border-top: 1px solid #090b0d;
+	border-right: 2px solid #424549;
+	border-bottom: 2px solid #424549;
+	border-left: 1px solid #090b0d;
+	margin: 10px 12pt;
+	border-radius: 7px;
+	background: #fff;
+	box-shadow: inset 0px 3px 0px 0px rgba(5,5,5,0.15);
+	font-family: Verdana;
+}
+	
+.form-spacer {
+	padding: 30px 39px;
+}
+
+.terms {
+	margin: 30px 1px 0 0;
+	margin-top: 13%;
+	padding-left: 52px;
+	font-size: 10pt;
+	line-height: 5px;
+	color: #000;
+	cursor: pointer;
+	font-family: Verdana;
+	font-weight: 600;
+	position: relative;
+	display: inline;
+	float: right;
+}
+	
+.submit input[type="submit"] {
+	color: #000;
+	cursor: pointer;
+	border: none;
+	font-weight: 900;
+	outline: none;
+	text-align: center;
+	font-family: Verdana;
+	margin: 0px 3%;
+	padding: 7px 0px;
+	width: 25%;
+	font-size: 18px;
+	transition: border-color 0.3s color 0.3s background-color 0.3s;
+	border-radius: 7px;
+	background-color: #fff;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+
+.rsvp {
+	display: block;
+	margin: 0 auto;
+}
+	
+/* Foot Section Formatting */
+
+#footer {
+	background-color: rgba(100,65,0,.3);
+	color: #fff;
+	text-shadow: 2px 2px 8px 0(0,0,0,0.4);
+	padding: 20px 50px 20px 50px;
+	text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
