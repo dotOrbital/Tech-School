@@ -1,0 +1,16 @@
+body {
+	background-color: lightblue;
+}
+
+h1, h2, strong {
+	color:darkblue;
+}
+
+h3 {
+	text-align: center;
+}
+
+iframe {
+   display: block;
+   margin: 0 auto;
+}
