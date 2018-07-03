@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<!Doctype html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>dotOrbital Ship Invetory Manager</title>
+</head>
+
+<body>
+    @using (Html.BeginForm("Importation", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.Raw(ViewBag.Error)
+        <br />
+        <span class="text-danger">Excel File</span><input type="file" name="excelfile" />
+        <br />
+        <br />
+        <br />
+        <input type="submit" value="Import" />
+    }
+</body>
+</html>

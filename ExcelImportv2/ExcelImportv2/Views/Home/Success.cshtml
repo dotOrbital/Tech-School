@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Success";
+}
+
+<h2 class="text-danger">Ship Inventory</h2>
+<table cellpadding="2" cellspacing="2" border="1">
+    <tr>
+        <th>Manufactuer</th>
+        <th>Model</th>
+        <th>Hardpoints (mounts)</th>
+        <th>TopVelocity (miles/sec)</th>
+    </tr>
+    @foreach(var newship in ViewBag.ListShips)
+    {
+        <tr>
+            <td>@newship.Manufactuer</td>
+            <td>@newship.ModelName</td>
+            <td class="text-center">@newship.Hardpoints</td>
+            <td class="text-center">@newship.TopVelocity</td>
+        </tr>
+    }
+</table>
+
